@@ -1,22 +1,33 @@
 import React, { useContext } from "react";
-// import { SearchContext } from "../../helpers/context/SearchContext";
+import { SearchContext } from "../../helpers/context/SearchContext";
+import { useForm } from "../../hooks/useForm";
 import glassMagnifier from "../../images/glassMagnifier.svg";
-const InputSearch = () => {
-  // const {setSearch} = useContext(SearchContext);
-  // const handleClick = () => {
-  //   setSearch(false);
-  // }
+const InputSearch = ({ history,q }) => {
+  const { setSearchValue } = useContext(SearchContext);
+  const [formValues, handleInputChange,reset] = useForm({
+    searchText: q,
+  });
+  const { searchText } = formValues;
+  const handleSearch = (e) => {
+    e.preventDefault();
+    setSearchValue(searchText);
+    history.push(`/search?q=${searchText}`);
+  };
+
   return (
-    <div className="navbar__inputSearch">
-      <input type="text" placeholder="Search" autoComplete="off" />
-      <div className="navbar__glass pointer">
-        <img
-          src={glassMagnifier}
-          alt="Glass magnifier"
-          // onClick={handleClick}
-        />
-      </div>
-    </div>
+    <form onSubmit={handleSearch} className="navbar__inputSearch">
+      <input
+        type="text"
+        placeholder="Search"
+        autoComplete="off"
+        name="searchText"
+        value={searchText}
+        onChange={handleInputChange}
+      />
+      <button className="navbar__glass" type="submit">
+        <img src={glassMagnifier} alt="Glass magnifier" />
+      </button>
+    </form>
   );
 };
 

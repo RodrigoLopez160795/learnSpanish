@@ -22,9 +22,11 @@
   border: 3px solid #018080;
   border-radius: 40px 40px 40px 40px;
   display: flex;
+  margin-top: 2rem;
+  margin-left: 3rem;
   padding: 0.5rem 1rem;
   padding-right: 0.5rem;
-  width: 40%;
+  width: 45%;
   height: 7vh;
   input {
     align-self: normal;
@@ -38,7 +40,10 @@
 }
 
 .navbar__glass {
-  align-self: center;
+  align-self: flex-end;
+  background-color: rgb(37, 35, 35);
+  border: none;
+  transition:all .5s ease;
 }
 
 .navbar__button {
@@ -66,7 +71,9 @@
   }
 
   .navbar__dropDownMenu{
+    margin-right: 4rem;
     position: relative;
+    
   }
 
 .navbar__menu{
@@ -101,4 +108,15 @@
     color:white;
   }
 }
+
+.searchButton{
+  transform:translateX(-20%);
+}
+.buttonWidth{
+  width: 100%;
+  i{
+    padding-left: 1.5rem;
+  }
+}
+
 

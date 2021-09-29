@@ -1,5 +1,34 @@
-.results__main{
-    display:flex;
-    flex-direction: column;
-    margin: 2rem 250px 2rem 250px;
+.results__main {
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  margin: 30px 50px 30px 50px;
+}
+
+.results__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.results__button {
+  background-color: lighten($color: $background, $amount: 10);
+  border: 3px solid #018080;
+  border-radius: 40px 40px 40px 40px;
+  color: $letter;
+  width: 20%;
+  transition: all 0.5s ease;
+  span {
+    margin-left: 0.3rem;
+  }
+  &:hover {
+    background-color: #018080;
+    color: white;
+  }
+}
+
+.results__link {
+  margin-left: 40%;
+  margin-top: 2rem;
+  width: 100%;
 }

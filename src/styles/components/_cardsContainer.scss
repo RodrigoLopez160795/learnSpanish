@@ -5,38 +5,37 @@
   z-index: 1;
 }
 
-.cards__button{
-    border:2px solid white;
-    border-radius: 40px 40px 40px 40px;
-    color:black;
-    font-weight:bold;
-    transition:all .5s ease;
-    
+.cards__button {
+  border: 2px solid white;
+  border-radius: 40px 40px 40px 40px;
+  color: black;
+  font-weight: bold;
+  transition: all 0.5s ease;
 }
 
-#card__button1{
-    background-color:lightgreen;
-    &:hover{
-        background-color:darken($color: lightgreen, $amount: 20);
-    }
+#card__button1 {
+  background-color: lightgreen;
+  &:hover {
+    background-color: darken($color: lightgreen, $amount: 20);
+  }
 }
-#card__button2{
-    background-color: lighten($color: purple, $amount: 25);
-    &:hover{
-        background-color: purple;
-    }
-}
-
-#card__button3{
-    background-color: lightblue;
-    &:hover{
-        background-color: darken($color: lightblue, $amount: 30);
-    }
+#card__button2 {
+  background-color: lighten($color: purple, $amount: 25);
+  &:hover {
+    background-color: purple;
+  }
 }
 
-#card__button4{
-    background-color: rgb(228, 216, 53);
-    &:hover{
-        background-color: darken($color: rgb(228, 216, 53), $amount: 15);
-    }
+#card__button3 {
+  background-color: lightblue;
+  &:hover {
+    background-color: darken($color: lightblue, $amount: 30);
+  }
+}
+
+#card__button4 {
+  background-color: rgb(228, 216, 53);
+  &:hover {
+    background-color: darken($color: rgb(228, 216, 53), $amount: 15);
+  }
 }

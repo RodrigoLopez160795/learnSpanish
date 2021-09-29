@@ -1,12 +1,18 @@
-import React from 'react'
-import AppRouter from './routers/AppRouter'
+import React, { useState } from "react";
+import { SearchContext } from "./helpers/context/SearchContext";
+import AppRouter from "./routers/AppRouter";
 
 const LearnSpanish = () => {
-    return (
-        <div>
-            <AppRouter/>
-        </div>
-    )
-}
+  const [searchValue, setSearchValue] = useState("");
+  return (
+    <div>
+      <SearchContext.Provider
+        value={{ searchValue, setSearchValue }}
+      >
+        <AppRouter />
+      </SearchContext.Provider>
+    </div>
+  );
+};
 
-export default LearnSpanish
+export default LearnSpanish;

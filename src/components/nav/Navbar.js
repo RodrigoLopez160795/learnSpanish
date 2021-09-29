@@ -1,14 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import InputSearch from "./InputSearch";
 import Logo from "./Logo";
 import Login from "../../images/loginIcon.svg";
 import ProfileButton from "./ProfileButton";
-const Navbar = (props) => {
+const Navbar = () => {
   return (
     <div className="navbar__main">
       <Logo />
-      <InputSearch />
+      <Link to="/search" className="anchor  searchButton">
+      <button className="navbar__button buttonWidth ">
+        
+      <i className="fa fa-arrow-right"></i>
+          <span>Search a course</span>
+        
+      </button>
+      </Link>
+
       <div className="navbar__log">
         {/* <button className="navbar__button pointer">
           <Link to="/auth/login" className="anchor">
@@ -22,7 +29,7 @@ const Navbar = (props) => {
             <span>Create new account</span>
           </Link>
         </button> */}
-        <ProfileButton/>
+        <ProfileButton />
       </div>
     </div>
   );
