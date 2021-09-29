@@ -1,0 +1,101 @@
+.forms__login{
+    background-color:lighten($color: $background, $amount: 20);
+    color:lighten($color: $letter, $amount: 50);
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding:5%;
+    width:60%;
+    button{
+        align-items: center;
+        align-self: center;
+        background-color: lighten($color: $background, $amount: 10);
+        border: 3px solid #018080;
+        border-radius: 40px 40px 40px 40px;
+        color: $letter;
+        display: flex;
+        height:7vh;
+        justify-content: center;
+        margin-top: 2rem;
+        transition:all .5s ease;
+        width:50%;
+        span{
+            margin-left: 1%;
+        }
+        &:hover {
+          background-color: #018080;
+          color: white;
+      
+          
+        }
+    }
+    h2{
+        align-self: center;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-top: 2%;
+    }
+}
+
+.forms__label{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    label{
+        font-size: large;
+    }
+    input{
+        width: 80%;
+        &:focus{
+            outline:none;
+        }
+    }
+}
+
+
+
+.google-btn {
+    align-self: center;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 50%;
+    height: 42px;
+    background-color: $google-blue;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+
+    transition: box-shadow .3s ease;
+
+    .google-icon-wrapper {
+        position: absolute;
+        margin-top: 1px;
+        margin-left: 1px;
+        width: 40px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: $white;
+    }
+    .google-icon {
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 11px;
+        width: 18px;
+        height: 18px;
+    }
+    .btn-text {
+        color: $white;
+        float: right;
+        font-size: 14px;
+        margin: 11px 75px 0 0;
+        letter-spacing: 0.2px;
+    }
+    &:hover {
+        box-shadow: 0 0 6px $google-blue;
+    }
+    &:active {
+        background: $button-active-blue;
+    }
+}

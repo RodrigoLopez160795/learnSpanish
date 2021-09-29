@@ -1,0 +1,66 @@
+.Mycourses__coursesContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin: 30px 50px 30px 50px;
+
+}
+
+.MyCourses__card{
+    background-color:white;
+    border: .5px solid grey;
+    display:flex;
+    flex-direction: column;
+    height:450px;
+    margin: .5rem;
+    padding:.5rem;
+    text-align:left;
+    width: 400px;
+}
+.MyCourses__cardtitle{
+    color: black;
+}
+
+.MyCourses__cardauthor{
+    color:darken($color: $letter, $amount: 20);
+}
+
+.MyCourses__info{
+    display:flex;
+    flex-direction: column;
+    padding:1rem;
+}
+
+.finished{
+    color: green;
+}
+
+.pending{
+    color:red;
+}
+
+.courses__coursesInfo{
+    margin: 3rem auto 3rem auto;
+    padding: .5rem 4rem .5rem 4rem;
+    width:800px;
+}
+.courses__textArea{
+    height:200px;
+    resize:none;
+    width:100%;
+    &:focus{
+        outline: none;
+    }
+}
+
+#title{
+    font-size:25px;
+    font-weight: bold;
+}
+
+#author{
+    font-weight: 100;
+}
+.course__about{
+    margin-bottom: 1rem;
+}

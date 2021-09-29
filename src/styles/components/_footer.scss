@@ -1,0 +1,29 @@
+footer{
+    background-color:lightgray;
+}
+.footer__main{
+    align-items: center;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-top:5%;
+    padding: 2%;
+    img{
+        margin:.5rem;
+        height:30px;
+        width:30px;
+    }
+  }
+
+  .footer__icons{
+      align-items: center;
+      display:flex;
+      margin-top:rem;
+      p{
+          margin-top:1rem;
+      }
+  }
+  .footer__copyright{
+      color:black;
+      padding: 2%;
+  }

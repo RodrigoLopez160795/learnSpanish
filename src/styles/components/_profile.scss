@@ -1,0 +1,78 @@
+.profile__title{
+    margin-left:4rem;
+    margin-top: 2rem;
+}
+
+.profile__navbar{
+    margin-top: 3rem;
+    margin-left:4rem;
+    margin-right: 4rem;
+}
+
+.profileforms__input{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    padding: 1rem;
+    input{
+        font-size:medium;
+        height:40px;
+        margin-top: .5rem;
+        width:600px;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.profileforms__row{
+    display: flex;
+    justify-content:center;
+    padding: 1rem;
+}
+.profileforms__biography{
+    display: flex;
+    flex-direction: column;
+    font-size:large;
+    margin-right: 55px;
+    margin-left: 55px;
+}
+
+.profileforms__textArea{
+    border: 1px solid black;
+    font-size:medium;
+    height:150px;
+    resize: none;
+    &:focus{
+        outline: none;
+    }
+}
+.profileforms__button{
+    font-size:medium;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.profilePicture__imageBox{
+    border: 3px solid #018080;
+    margin-right: 450px;
+    margin-left: 450px;
+}
+
+.profilePicture__image{
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.profilePicture__upload{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.profilePicture__title{
+    font-size:medium;
+    margin-top: 4rem;
+    margin-left: 450px;
+}

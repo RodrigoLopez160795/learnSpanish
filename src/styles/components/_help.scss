@@ -1,0 +1,19 @@
+.help__box{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    label{
+        font-size:medium;
+        margin-bottom: 1rem;
+    }
+}
+
+.help__text{
+    height:300px;
+    resize:none;
+    width: 60%;
+    &:focus{
+        outline: none;
+    }
+}

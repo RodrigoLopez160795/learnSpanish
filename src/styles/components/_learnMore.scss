@@ -1,0 +1,20 @@
+.learnMore__main{
+    background-color:lighten($color: $background, $amount: 10);
+    border: 3px solid #018080;
+    margin: 10%;
+    text-align: center;
+    p{
+        font-size:17px;
+        text-align: justify;
+    }
+}
+
+.learnMore__text{
+    padding: 2%;
+}
+
+.learnMore__image{
+    height:450px;
+    padding:2%;
+    width:100%;
+}

@@ -1,0 +1,24 @@
+.homeButton__main{
+    align-items: center;
+    align-self: center;
+    background-color: lighten($color: $background, $amount: 10);
+    border: 3px solid #018080;
+    border-radius: 40px 40px 40px 40px;
+    color: $letter;
+    display: flex;
+    height:9vh;
+    justify-content:center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    transition:all .5s ease;
+    width: 15%;
+    span{
+        font-size: 20px;
+        margin-left: 3%;
+    }
+    &:hover {
+        background-color: #018080;
+        color: white;  
+      }
+}
