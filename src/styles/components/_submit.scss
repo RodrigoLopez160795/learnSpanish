@@ -1,7 +1,24 @@
 .submit__boxMessage{
     border:3px solid #018080;
+    text-align:center;
     margin-left: 350px;
     margin-right: 350px;
     margin-top: 50px;
     padding:2rem;
+    img{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        height:300px;
+        width: 300px;
+    }
+    h3{
+        color: rgb(1,128,128);
+        font-weight:700;
+    }
+}
+
+.submit__options{
+    display:flex;
+    justify-content:space-between;
 }

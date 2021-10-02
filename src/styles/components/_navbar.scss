@@ -8,11 +8,15 @@
 .navbar__logo {
   align-items: center;
   display: flex;
+  span{
+    font-size:25px;
+    font-weight: 900;
+  }
 
   img {
     display: block;
     height: 70px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
     width: 70px;
   }
 }
@@ -68,6 +72,14 @@
 }
   .navbar__log{
       display: flex;
+      justify-content:space-between;
+      width:25%;
+  }
+
+  .navbar__log2{
+    display:flex;
+    justify-content:flex-end;
+    width: 20%;
   }
 
   .navbar__dropDownMenu{
@@ -109,14 +121,61 @@
   }
 }
 
-.searchButton{
-  transform:translateX(-20%);
+.navbar__searchButton{
+  align-items: center;
+  background-color: $background;
+  border: 3px solid #018080;
+  border-radius: 40px 40px 40px 40px;
+  color: $letter;
+  display: flex;
+  height:7vh;
+  padding: 1.3rem;
+  width:100%;
+  transition:all .5s ease;
+  &:hover {
+    background-color: #018080;
+    color: white;
+  }
+  span{  
+      margin-left: .5rem;
+  }
+  
 }
-.buttonWidth{
-  width: 100%;
-  i{
-    padding-left: 1.5rem;
+
+.logginTrue{
+  width: 14%;
+  transform:translateX(20%);
+}
+
+.logginFalse{
+  width: 14%;
+  transform:translateX(7%);
+}
+
+.navbar__button2{
+  align-items: center;
+  background-color: $background;
+  border: 3px solid #018080;
+  border-radius: 40px 40px 40px 40px;
+  color: $letter;
+  display: flex;
+  height:7vh;
+  width:100%;
+  transition:all .5s ease;
+  &:hover {
+    background-color: #018080;
+    color: white;
+    
+  }
+  span{  
+      margin-left: .5rem;
   }
 }
 
+#login{
+  width: 26%;
+}
 
+#create{
+  width:55%;
+}

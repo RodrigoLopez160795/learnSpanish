@@ -13,21 +13,23 @@ const Help = () => {
   return (
     <div>
       {complain && (
-        <div className="help__box">
+        <form className="help__box">
           <label htmlFor="help">¿How can we help you?</label>
           <textarea
             className="help__text"
             placeholder="Tell us your problem and we'll contact with you"
           ></textarea>
-          <button className="navbar__button" onClick={handleClick}>
+          <button className="navbar__button " type="submit" onClick={handleClick}>
             Send
           </button>
-        </div>
+        </form>
       )}
       {message && (
         <Message
           title="We recieved your complain."
           text="We'll comunicate with you as soon as we can.Thank you for your patient."
+          handleClick={()=>{setMessage(false);setComplain(true);}}
+          status={true}
         />
       )}
       {complain && <HomeButton />}

@@ -39,9 +39,20 @@ const CreateAccount = () => {
         }
         return errors;
       }}
+      onSubmit={(values, { resetForm }) => {
+        resetForm();
+        console.log("Formulario enviado");
+      }}
     >
-      {({ values, handleChange, handleBlur, errors, touched }) => (
-        <form className="forms__login">
+      {({
+        values,
+        handleChange,
+        handleBlur,
+        errors,
+        touched,
+        handleSubmit,
+      }) => (
+        <form className="forms__login" onSubmit={handleSubmit}>
           <h2>Create account</h2>
           <div className="forms__label">
             <label htmlFor="name">Name</label>
@@ -116,7 +127,11 @@ const CreateAccount = () => {
               <b>Sign in with google</b>
             </p>
           </div>
-          <Link to="/auth/login" className="anchor pointer">
+          <Link
+            to="/auth/login"
+            className="anchor pointer forms__anchor"
+            id="forms__anchorCreate"
+          >
             <p>Login</p>
           </Link>
         </form>

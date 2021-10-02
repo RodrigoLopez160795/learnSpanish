@@ -4,7 +4,7 @@ import { useForm } from "../../hooks/useForm";
 import glassMagnifier from "../../images/glassMagnifier.svg";
 const InputSearch = ({ history,q }) => {
   const { setSearchValue } = useContext(SearchContext);
-  const [formValues, handleInputChange,reset] = useForm({
+  const [formValues, handleInputChange] = useForm({
     searchText: q,
   });
   const { searchText } = formValues;
@@ -25,7 +25,7 @@ const InputSearch = ({ history,q }) => {
         onChange={handleInputChange}
       />
       <button className="navbar__glass" type="submit">
-        <img src={glassMagnifier} alt="Glass magnifier" />
+        <img src={glassMagnifier} alt="Glass magnifier" className="focus"/>
       </button>
     </form>
   );

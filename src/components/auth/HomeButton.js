@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const HomeButton = () => {
     return (
-        <Link to='/' className="anchor">
+        <Link to='/' className="anchor homeButton__anchor" >
         <button className="homeButton__main">
             <i className="fa fa-arrow-left fa-lg" style={{ color: "white" }}></i>
             <span>Return</span>

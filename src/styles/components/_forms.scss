@@ -64,7 +64,7 @@
     width: 50%;
     height: 42px;
     background-color: $google-blue;
-    border-radius: 2px;
+    border-radius: 40px 40px 40px 40px;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
 
     transition: box-shadow .3s ease;
@@ -75,7 +75,7 @@
         margin-left: 1px;
         width: 40px;
         height: 40px;
-        border-radius: 2px;
+        border-radius: 40px 40px 40px 40px;
         background-color: $white;
     }
     .google-icon {
@@ -98,4 +98,21 @@
     &:active {
         background: $button-active-blue;
     }
+}
+
+.forms__anchor{
+    color: white;
+    transition:all .3s ease;
+    &:hover{
+        color:white;
+        font-weight: 700;
+    }
+}
+
+#forms__anchorCreate{
+    width:6%;
+}
+
+#forms__anchorLogin{
+    width:21.5%;
 }

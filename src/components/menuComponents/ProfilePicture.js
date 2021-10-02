@@ -2,7 +2,7 @@ import React from "react";
 
 const ProfilePicture = () => {
   return (
-    <div>
+    <form>
         <span className="profilePicture__title">Preview</span>
       <div className="profilePicture__imageBox">
         <img
@@ -14,8 +14,8 @@ const ProfilePicture = () => {
       <button className="navbar__button profilePicture__upload">
       <i className="fa fa-upload fa-lg pointer"></i>
       </button>
-      <button className="navbar__button profileforms__button">Save</button>
-    </div>
+      <button className="navbar__button profileforms__button" type="submit">Save</button>
+    </form>
   );
 };
 

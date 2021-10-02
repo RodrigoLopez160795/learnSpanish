@@ -1,7 +1,8 @@
 .cardsContainer__main {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  height:500px;
+  width: 90%;
   z-index: 1;
 }
 
@@ -37,5 +38,11 @@
   background-color: rgb(228, 216, 53);
   &:hover {
     background-color: darken($color: rgb(228, 216, 53), $amount: 15);
+  }
+}
+
+.button__svg{
+  svg{
+    fill: black !important;
   }
 }

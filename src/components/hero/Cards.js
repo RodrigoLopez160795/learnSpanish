@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import cards from "../../helpers/cards";
-const { card1, card2, card3, card4 } = cards;
+import carouselImage from "../../helpers/carouselImage";
 const Cards = () => {
+  const { card1, card2, card3, card4 } = cards;
   return (
     <div
       id="carouselExampleCaptions"
@@ -13,7 +14,7 @@ const Cards = () => {
         <div className="carousel-item active">
           <img
             src="https://www.canadianbusiness.com/wp-content/uploads/2018/04/iStock-615737466-2.jpg"
-            style={{ height: 450 }}
+            style={{ height: 500 }}
             className="d-block w-100"
             alt="First slide"
           />
@@ -37,8 +38,8 @@ const Cards = () => {
         </div>
         <div className="carousel-item">
           <img
-            src="https://miro.medium.com/max/1392/1*8mnFjSbH1YaX-1RKbUJSvQ.jpeg"
-            style={{ height: 450 }}
+            src={carouselImage.card2}
+            style={{ height: 500 }}
             className="d-block w-100"
             alt="Second slide"
           />
@@ -63,7 +64,7 @@ const Cards = () => {
         <div className="carousel-item">
           <img
             src="https://scx2.b-cdn.net/gfx/news/hires/2021/i-was-astonished-at-ho.jpg"
-            style={{ height: 450 }}
+            style={{ height: 500 }}
             className="d-block w-100"
             alt="Third slide"
           />
@@ -87,8 +88,8 @@ const Cards = () => {
         </div>
         <div className="carousel-item">
           <img
-            src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX39313494.jpg"
-            style={{ height: 450 }}
+            src={carouselImage.card4}
+            style={{ height: 500 }}
             className="d-block w-100"
             alt="Fourth slide"
           />
@@ -112,11 +113,10 @@ const Cards = () => {
         </div>
       </div>
       <button
-        className="carousel-control-prev"
+        className="carousel-control-prev "
         type="button"
         data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev"
-        style={{ backgroundColor: "black" }}
       >
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Previous</span>
@@ -126,7 +126,7 @@ const Cards = () => {
         type="button"
         data-bs-target="#carouselExampleCaptions"
         data-bs-slide="next"
-        style={{ backgroundColor: "black" }}
+
       >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>

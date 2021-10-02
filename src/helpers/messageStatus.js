@@ -1,9 +1,9 @@
-import successful from '../images/succesful.png';
-import failed from '../images/Failed.jpeg';
+import successful from '../images/Paloma.png';
+import failed from '../images/Tache.png';
 
 const images={
     "success":successful,
-    "failed":failed
+    "failed":failed,
 }
 
 export default images;

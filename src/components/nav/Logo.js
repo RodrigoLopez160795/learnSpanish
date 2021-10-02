@@ -4,7 +4,7 @@ const Logo = () => {
   return (
       <div className="navbar__logo ">
         <img src={logo} alt="Logo" />
-        <h3>Learn Spanish</h3>
+        <span>Learn Spanish</span>
       </div>
   );
 };

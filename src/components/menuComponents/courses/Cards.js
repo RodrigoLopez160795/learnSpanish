@@ -16,7 +16,7 @@ const Cards = (props) => {
       <div className="MyCourses__info">
         <span className="MyCourses__cardtitle">{props.title}</span>
         <span className="MyCourses__cardauthor">{props.author}</span>
-        <Link to={`/courses/${props.title}`} className="anchor__dark pointer" style={{width:"90px"}}>Go to course</Link>
+        <Link to={`/courses/${props.title}`} className="anchor__dark pointer" style={{width:"120px"}}>Go to course</Link>
       </div>
     </div>
   );

@@ -84,7 +84,7 @@ const Login = () => {
               <b>Sign in with google</b>
             </p>
           </div>
-          <Link to="/auth/register" className="anchor pointer">
+          <Link to="/auth/register" className="anchor pointer forms__anchor" id="forms__anchorLogin">
             <p>Create new account</p>
           </Link>
         </form>

@@ -1,8 +1,11 @@
 .learnMore__main{
     background-color:lighten($color: $background, $amount: 10);
     border: 3px solid #018080;
-    margin: 10%;
+    margin: 2.5% 2% 5% 2%;
     text-align: center;
+    h1{
+        padding-top: 1%;
+    }
     p{
         font-size:17px;
         text-align: justify;
@@ -16,5 +19,5 @@
 .learnMore__image{
     height:450px;
     padding:2%;
-    width:100%;
+    width:90%;
 }

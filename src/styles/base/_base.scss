@@ -9,6 +9,7 @@ body {
   color: $letter;
   font-family: sans-serif;
   font-size: 15px;
+  height:auto;
 }
 
 ul {
@@ -30,17 +31,26 @@ ul {
 .anchor {
   color: $letter;
   text-decoration: none;
-  transition: all 0.5s ease;
-  &:hover {
-    color: white;
+  &:hover{
+    text-decoration: none;
   }
 }
 
 .anchor__dark {
-  color: darken($color: $letter, $amount: 20);
+  color: rgb(1,128,128);
+  font-weight: 700;
   text-decoration: none;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
   &:hover {
-    color: black;
+    color: rgb(1,128,128);
+    font-weight: 900;
   }
 }
+
+.focus{
+  &:focus{
+    outline: none;
+  }
+}
+
+
